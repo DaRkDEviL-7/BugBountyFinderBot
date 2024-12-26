@@ -11,7 +11,7 @@ from db import init_db, update_points, get_leaderboard, set_user_pref, get_user_
 from dotenv import load_dotenv
 
 load_dotenv()  # Load environment variables from .env
-BOT_TOKEN = os.getenv("7484460764:AAFOP5PDomeOy_H0oS9nNHBSbZOsC24nyzc")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Initialize Database
 init_db()

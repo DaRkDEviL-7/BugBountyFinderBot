@@ -3,7 +3,8 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-openai.api_key = "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"
+# Load the API key from environment variables
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def analyze_scraped_data(data):
     prompt = f"Summarize the following scraped data:\n{data}"
